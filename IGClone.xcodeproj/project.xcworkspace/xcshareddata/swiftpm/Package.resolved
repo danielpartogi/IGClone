@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Nuke",
+        "repositoryURL": "https://github.com/kean/Nuke.git",
+        "state": {
+          "branch": null,
+          "revision": "fdde04a80497b54e2773c5e5d02dfbb9bdbe99a9",
+          "version": "9.2.3"
+        }
+      },
+      {
+        "package": "SDWebImage",
+        "repositoryURL": "https://github.com/SDWebImage/SDWebImage.git",
+        "state": {
+          "branch": null,
+          "revision": "564d238f8814c4a82502336fd80b28a9d321ff47",
+          "version": "5.10.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
