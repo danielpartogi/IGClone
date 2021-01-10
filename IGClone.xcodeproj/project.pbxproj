@@ -3,16 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2E472DD625AAAA83002F8B06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E472DD525AAAA83002F8B06 /* AppDelegate.swift */; };
 		2E472DD825AAAA83002F8B06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E472DD725AAAA83002F8B06 /* SceneDelegate.swift */; };
 		2E472DDA25AAAA83002F8B06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E472DD925AAAA83002F8B06 /* ViewController.swift */; };
-		2E472DDD25AAAA83002F8B06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E472DDB25AAAA83002F8B06 /* Main.storyboard */; };
 		2E472DDF25AAAA85002F8B06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E472DDE25AAAA85002F8B06 /* Assets.xcassets */; };
 		2E472DE225AAAA85002F8B06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E472DE025AAAA85002F8B06 /* LaunchScreen.storyboard */; };
+		2E472DF925AB3FBF002F8B06 /* dummy.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E472DF825AB3FBF002F8B06 /* dummy.json */; };
+		2E472DFE25AB41B9002F8B06 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E472DFC25AB41B9002F8B06 /* FeedTableViewCell.swift */; };
+		2E472DFF25AB41B9002F8B06 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E472DFD25AB41B9002F8B06 /* FeedTableViewCell.xib */; };
+		2E472E0325AB4930002F8B06 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 2E472E0225AB4930002F8B06 /* SDWebImage */; };
+		2E472E0825AB4BEE002F8B06 /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E472E0725AB4BEE002F8B06 /* Reader.swift */; };
+		2E472E0D25AB5FA9002F8B06 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 2E472E0C25AB5FA9002F8B06 /* Nuke */; };
+		2E472E1125AB5FF0002F8B06 /* UIIMageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E472E1025AB5FF0002F8B06 /* UIIMageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +26,14 @@
 		2E472DD525AAAA83002F8B06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E472DD725AAAA83002F8B06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2E472DD925AAAA83002F8B06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2E472DDC25AAAA83002F8B06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2E472DDE25AAAA85002F8B06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E472DE125AAAA85002F8B06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E472DE325AAAA85002F8B06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E472DF825AB3FBF002F8B06 /* dummy.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dummy.json; sourceTree = "<group>"; };
+		2E472DFC25AB41B9002F8B06 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		2E472DFD25AB41B9002F8B06 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
+		2E472E0725AB4BEE002F8B06 /* Reader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reader.swift; sourceTree = "<group>"; };
+		2E472E1025AB5FF0002F8B06 /* UIIMageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIIMageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E472E0325AB4930002F8B06 /* SDWebImage in Frameworks */,
+				2E472E0D25AB5FA9002F8B06 /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +68,59 @@
 		2E472DD425AAAA83002F8B06 /* IGClone */ = {
 			isa = PBXGroup;
 			children = (
-				2E472DD525AAAA83002F8B06 /* AppDelegate.swift */,
+				2E472E0625AB4BD0002F8B06 /* Utils */,
 				2E472DD725AAAA83002F8B06 /* SceneDelegate.swift */,
-				2E472DD925AAAA83002F8B06 /* ViewController.swift */,
-				2E472DDB25AAAA83002F8B06 /* Main.storyboard */,
-				2E472DDE25AAAA85002F8B06 /* Assets.xcassets */,
+				2E472DD525AAAA83002F8B06 /* AppDelegate.swift */,
+				2E472DEC25AAAB79002F8B06 /* Scenes */,
 				2E472DE025AAAA85002F8B06 /* LaunchScreen.storyboard */,
+				2E472DDE25AAAA85002F8B06 /* Assets.xcassets */,
 				2E472DE325AAAA85002F8B06 /* Info.plist */,
+				2E472DF825AB3FBF002F8B06 /* dummy.json */,
 			);
 			path = IGClone;
+			sourceTree = "<group>";
+		};
+		2E472DEB25AAAB66002F8B06 /* Feeds */ = {
+			isa = PBXGroup;
+			children = (
+				2E472DD925AAAA83002F8B06 /* ViewController.swift */,
+				2E472DED25AAAB97002F8B06 /* CustomViews */,
+			);
+			path = Feeds;
+			sourceTree = "<group>";
+		};
+		2E472DEC25AAAB79002F8B06 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2E472DEB25AAAB66002F8B06 /* Feeds */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2E472DED25AAAB97002F8B06 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				2E472DFC25AB41B9002F8B06 /* FeedTableViewCell.swift */,
+				2E472DFD25AB41B9002F8B06 /* FeedTableViewCell.xib */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		2E472E0625AB4BD0002F8B06 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2E472E0F25AB5FDC002F8B06 /* Extension */,
+				2E472E0725AB4BEE002F8B06 /* Reader.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2E472E0F25AB5FDC002F8B06 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2E472E1025AB5FF0002F8B06 /* UIIMageView.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +139,10 @@
 			dependencies = (
 			);
 			name = IGClone;
+			packageProductDependencies = (
+				2E472E0225AB4930002F8B06 /* SDWebImage */,
+				2E472E0C25AB5FA9002F8B06 /* Nuke */,
+			);
 			productName = IGClone;
 			productReference = 2E472DD225AAAA83002F8B06 /* IGClone.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +170,10 @@
 				Base,
 			);
 			mainGroup = 2E472DC925AAAA83002F8B06;
+			packageReferences = (
+				2E472E0125AB4930002F8B06 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				2E472E0B25AB5FA9002F8B06 /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			productRefGroup = 2E472DD325AAAA83002F8B06 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,8 +189,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E472DE225AAAA85002F8B06 /* LaunchScreen.storyboard in Resources */,
+				2E472DFF25AB41B9002F8B06 /* FeedTableViewCell.xib in Resources */,
 				2E472DDF25AAAA85002F8B06 /* Assets.xcassets in Resources */,
-				2E472DDD25AAAA83002F8B06 /* Main.storyboard in Resources */,
+				2E472DF925AB3FBF002F8B06 /* dummy.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +203,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E472DDA25AAAA83002F8B06 /* ViewController.swift in Sources */,
+				2E472DFE25AB41B9002F8B06 /* FeedTableViewCell.swift in Sources */,
+				2E472E1125AB5FF0002F8B06 /* UIIMageView.swift in Sources */,
+				2E472E0825AB4BEE002F8B06 /* Reader.swift in Sources */,
 				2E472DD625AAAA83002F8B06 /* AppDelegate.swift in Sources */,
 				2E472DD825AAAA83002F8B06 /* SceneDelegate.swift in Sources */,
 			);
@@ -146,14 +214,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2E472DDB25AAAA83002F8B06 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2E472DDC25AAAA83002F8B06 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2E472DE025AAAA85002F8B06 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,6 +349,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L5XG7J5AB8;
 				INFOPLIST_FILE = IGClone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +369,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L5XG7J5AB8;
 				INFOPLIST_FILE = IGClone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,6 +403,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2E472E0125AB4930002F8B06 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		2E472E0B25AB5FA9002F8B06 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.2.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2E472E0225AB4930002F8B06 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2E472E0125AB4930002F8B06 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		2E472E0C25AB5FA9002F8B06 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2E472E0B25AB5FA9002F8B06 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2E472DCA25AAAA83002F8B06 /* Project object */;
 }
