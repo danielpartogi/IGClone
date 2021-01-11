@@ -19,6 +19,8 @@
 		2E472E0825AB4BEE002F8B06 /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E472E0725AB4BEE002F8B06 /* Reader.swift */; };
 		2E472E0D25AB5FA9002F8B06 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 2E472E0C25AB5FA9002F8B06 /* Nuke */; };
 		2E472E1125AB5FF0002F8B06 /* UIIMageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E472E1025AB5FF0002F8B06 /* UIIMageView.swift */; };
+		2EC05CA025ACD20D000DD88A /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC05C9F25ACD20D000DD88A /* Feed.swift */; };
+		2EC05CA325ACD37A000DD88A /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC05CA225ACD37A000DD88A /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		2E472DFD25AB41B9002F8B06 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
 		2E472E0725AB4BEE002F8B06 /* Reader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reader.swift; sourceTree = "<group>"; };
 		2E472E1025AB5FF0002F8B06 /* UIIMageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIIMageView.swift; sourceTree = "<group>"; };
+		2EC05C9F25ACD20D000DD88A /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		2EC05CA225ACD37A000DD88A /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 		2E472DD425AAAA83002F8B06 /* IGClone */ = {
 			isa = PBXGroup;
 			children = (
+				2EC05C9D25ACD1EE000DD88A /* Data */,
 				2E472E0625AB4BD0002F8B06 /* Utils */,
 				2E472DD725AAAA83002F8B06 /* SceneDelegate.swift */,
 				2E472DD525AAAA83002F8B06 /* AppDelegate.swift */,
@@ -119,8 +124,25 @@
 			isa = PBXGroup;
 			children = (
 				2E472E1025AB5FF0002F8B06 /* UIIMageView.swift */,
+				2EC05CA225ACD37A000DD88A /* String.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		2EC05C9D25ACD1EE000DD88A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2EC05C9E25ACD1F8000DD88A /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		2EC05C9E25ACD1F8000DD88A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2EC05C9F25ACD20D000DD88A /* Feed.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,8 +227,10 @@
 				2E472DDA25AAAA83002F8B06 /* ViewController.swift in Sources */,
 				2E472DFE25AB41B9002F8B06 /* FeedTableViewCell.swift in Sources */,
 				2E472E1125AB5FF0002F8B06 /* UIIMageView.swift in Sources */,
+				2EC05CA025ACD20D000DD88A /* Feed.swift in Sources */,
 				2E472E0825AB4BEE002F8B06 /* Reader.swift in Sources */,
 				2E472DD625AAAA83002F8B06 /* AppDelegate.swift in Sources */,
+				2EC05CA325ACD37A000DD88A /* String.swift in Sources */,
 				2E472DD825AAAA83002F8B06 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

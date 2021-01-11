@@ -44,7 +44,7 @@
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="yp9-VK-fKe" firstAttribute="top" secondItem="IdW-4c-VXA" secondAttribute="bottom" priority="750" constant="16" id="9PD-cu-6mC"/>
+                    <constraint firstItem="yp9-VK-fKe" firstAttribute="top" secondItem="IdW-4c-VXA" secondAttribute="bottom" constant="16" id="9PD-cu-6mC"/>
                     <constraint firstItem="yp9-VK-fKe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="AA4-F7-OxN"/>
                     <constraint firstItem="1R3-vp-UjH" firstAttribute="top" secondItem="moz-KB-2aD" secondAttribute="top" id="B3A-dH-Qil"/>
                     <constraint firstItem="moz-KB-2aD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="CXP-5g-l10"/>
